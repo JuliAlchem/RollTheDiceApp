@@ -20,8 +20,8 @@ function Navbar(){
             <nav ref={navRef}>
                 <a href='#'>Home</a> 
                 <a href='#'>Play</a>
-                <a href='#'>My work</a>
                 <a href='#'>Statistics</a>
+                <a href='#'>Login</a>
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                     <FaTimes/>
                 </button>
