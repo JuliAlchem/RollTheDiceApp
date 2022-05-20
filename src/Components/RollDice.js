@@ -26,6 +26,8 @@ class RollDice extends Component{
      const newDie1 = this.props.sides[Math.floor(Math.random() * this.props.sides.length)]
      const newDie2 = this.props.sides[Math.floor(Math.random() * this.props.sides.length)]
 
+     console.log(newDie1, newDie2);
+     
     this.setState({die1: "d6", die2: "d6", isRolling: true});
     // settimer
     setTimeout(()=>this.setState({die1: newDie1, die2: newDie2, isRolling: false}), 1000)
