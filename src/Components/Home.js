@@ -11,7 +11,7 @@ function Home(){
            alt="Rolling Dice Cup"/>
             <div className="container-text">
                 <p className="title">Rules</p>
-                <p className="text">What's about the rulles? That's simple! Get 7 in total and you win! Is it clear now? Good luck then! </p>
+                <p className="text">What's about the rules? That's simple! Get 7 in total and you win! Is it clear now? Good luck then! </p>
             </div>
         </div>
        
