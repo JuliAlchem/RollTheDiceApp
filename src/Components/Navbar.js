@@ -11,7 +11,12 @@ function Navbar(){
 
     return (
         <header>
+            <div className="logo-name">
+            <img className="logo"
+            src={require("../Images/rollingdice.png")}
+            alt="logo"/>
             <h3>Roll The Dice</h3>
+            </div>
             <nav ref={navRef}>
                 <a href='#'>Home</a> 
                 <a href='#'>Play</a>

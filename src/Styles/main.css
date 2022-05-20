@@ -23,7 +23,17 @@ header {
     background-color: var(--mainColor);
     color: var(--textColor);
 }
-
+.logo-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.logo {
+    height: 50px;
+    width: auto;  
+    margin-right: 15px;
+}
 nav a {
     margin: 0 2rem;
     color: var(--textColor);
