@@ -16,13 +16,15 @@
     height: 100%;
     width: auto;
     
+    
 }
 
-
-
-@media only screen and (max-width: 1024px){
-    .image-dice {
-        width: 50%;
-    }
-    
+.roll-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #29335C;
+    font-size: 2rem;
 }

@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar';
 import Main from './Components/Main';
 import React from 'react';
 import Game from './Components/Game';
+import RollDice from './Components/RollDice';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       
       <Navbar/>
       <div className='container-principle'>
-      <Game/>
+      <RollDice/>
       </div>
     </React.Fragment>
   );
