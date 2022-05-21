@@ -18,10 +18,10 @@ function Navbar(){
             <h3>Roll The Dice</h3>
             </div>
             <nav ref={navRef}>
-                <a href='#'>Home</a> 
-                <a href='#'>Play</a>
+                <a href='/'>Home</a> 
+                <a href='rolldice'>Play</a>
                 <a href='#'>Statistics</a>
-                <a href='#'>Login</a>
+                <a href='register'>Register</a>
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                     <FaTimes/>
                 </button>
