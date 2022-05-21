@@ -1,22 +1,56 @@
-.container-main {
+.container-reg {
     width: 1170px;
     height: 368px;
     margin: 10px 10px 50px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #ffffff;
     box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
     
 }
-h3 { 
-    color: #29335C;
-    
+section.title {
+    height:100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+h2 { 
+    color: #29335C;   
+    font-size: 2rem; 
+}
+section.form {
+    height:100%;
+    width: 30%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+   
+    width: 100%;
+}
+form label {
+    color: #29335C;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+form input {
 
+    background-color: #f5f6f7;
+    width: 150px;
+    border: none;
+    box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+}
 .btn {
-    padding: 5px;
+    padding: 2px;
     cursor: pointer;
     background: transparent;
     border: none;
@@ -24,7 +58,54 @@ h3 {
     color: #29335C;
     font-size: 1.5rem;
 }
-h3, form, p, button {
-    border: 1px solid black;
+section.login {
+    height:100%;
+    width: 30%;
     
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.login{
+    color: black;
+    font-size: 1.2rem;
+}
+.login a{
+    color: #29335C;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.login a:hover{
+    color:  black;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1024px){
+    .container-reg {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #29335C;;
+    }
+    section.title {
+        padding: 10px;
+        width:100%;
+        border-bottom: 2px solid #29335C;;
+    } 
+    section.form {
+        padding: 10px;
+        width:100%;
+        
+    }
+    section.login {
+        padding: 10px;
+        width:100%;
+        border-top: 2px solid #29335C;;
+    }
+    
+    }

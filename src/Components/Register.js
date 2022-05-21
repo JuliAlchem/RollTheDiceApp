@@ -56,10 +56,15 @@ const Register = () => {
 
     return (
         
-        <div className="container-main">
+        <div className="container-reg">
+            <section className='title'>
+            {/* 
             <p ref={errRef} className={errMsg ? 'errmsg' :
             'offscreen'} aria-live='assertive'>{errMsg}</p>
-            <h3>Register</h3>
+            */}
+            <h2>Register</h2>
+            </section>
+            <section className='form'>
             <form onSubmit={handleSubmit}>
                 <label htmlFor='username'> Name:
                 </label>
@@ -75,6 +80,7 @@ const Register = () => {
                     onFocus={() => setUserFocus(true)}
                     onBlur={() => setUserFocus(false)}
                 />
+                {/* 
                 <p id='uidnote' className={userFocus && user && 
                 !validName ? 'instructions': 'offscreen'}>
                     4 to 24 characters.<br />
@@ -82,7 +88,7 @@ const Register = () => {
                     Letters, numbers, underscores, hyphens allowed.
                     
                 </p>
-
+                    */}
                 <label htmlFor='password'> Password:
                 </label>
                 <input
@@ -96,10 +102,11 @@ const Register = () => {
                     onFocus={() => setPwdFocus(true)}
                     onBlur={() => setPwdFocus(false)}
                 />
+                {/*
                 <p id='pwdnote' className={pwdFocus && !validPwd ? 'instructions': 'offscreen'}>
                     8 to 24 characters.<br />
                     Must include uppercase and lowercase letters, a number and a special characters.
-                </p>
+                </p> */}
 
                 <label htmlFor='confirm_pwd'> Confirm Password:
                 </label>
@@ -114,19 +121,23 @@ const Register = () => {
                     onFocus={() => setMatchFocus(true)}
                     onBlur={() =>  setMatchFocus(false)}
                 />
-                <p id='confirmnote' className={matchFocus && !validMatch ? 'instructions': 'offscreen'}>
+                
+                {/*<p id='confirmnote' className={matchFocus && !validMatch ? 'instructions': 'offscreen'}>
                     Must match the password.    
-                </p>
+                </p>*/}
                 <button className='btn' disabled={!validName || !validPwd || !validMatch ? true : false}
                 >Sign Up</button>
             </form>
-            <p>
+            </section>
+            <section className='login'>
+            <p className='login'>
                 Already registered? <br />
                 <span className='line'>
                     {/* put router link here */}
                     <a href='#'>Sign In</a>
                 </span>
             </p>
+            </section>
         </div>
     )
 }
