@@ -1,4 +1,4 @@
-.container-main {
+.rolldice {
     width: 1170px;
     margin: 10px 10px 50px;
     display: flex;
@@ -9,15 +9,23 @@
     box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
     
 }
-.container-dice {
-    
+section.dice {
+    width: 50%;
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 100%;
-    width: auto;
     
     
 }
+section.text {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+     
+}
+
 
 .roll-btn {
     padding: 5px;
@@ -27,4 +35,29 @@
     outline: none;
     color: #29335C;
     font-size: 2rem;
+    
+}
+
+@media only screen and (max-width: 1024px){
+    .rolldice {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #29335C;
+    }
+    section.dice {
+        padding: 10px;
+        width:100%;
+       
+    } 
+    section.text {
+        padding: 10px;
+        width:100%;
+        
+    }
+   
+
 }

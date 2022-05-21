@@ -36,19 +36,19 @@ class RollDice extends Component{
 
   render(){
     return (
-      <div className="container-main">
-      <div className="container-dice">      
+      <main className="rolldice">
+      <section className="dice">      
           <Die face={this.state.die1} animation = {this.state.isRolling}/>
           <Die face={this.state.die2} animation = {this.state.isRolling}/>
-        </div>
+        </section>
       
-        <div className="container-text">
+        <section className="text">
           <p className="result">Lorem Ipsum</p>
           <button className="roll-btn" onClick= {this.roll} disabled={this.state.isRolling}> 
           { this.state.isRolling ? 'Rolling...' : 'Roll Dice !'}
         </button>
-        </div>
-      </div>
+        </section>
+      </main>
     )
   }
 }
