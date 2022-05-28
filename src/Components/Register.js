@@ -87,7 +87,7 @@ function Register () {
                 <span>{registerInput.error_list.password}</span>
                  
                 <button className='btn' type='submit'
-                >Sign Up</button>
+                >Register</button>
             </form>
             </section>
 
