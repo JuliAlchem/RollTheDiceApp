@@ -79,8 +79,19 @@ function Login(){
                <span>{loginInput.error_list.password}</span>
                  
                 <button className='btn' type='submit'
-                >Login</button>
+                >Sing In</button>
             </form>
+            </section>
+
+            <section className='login'>
+            <p className='login'>
+                Not registered yet? <br />
+                <span className='line'>
+                  
+                    <a href='register'>Sign Up</a>
+                </span>
+            </p>
+           
             </section>
             </div>
     )

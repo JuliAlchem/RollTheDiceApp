@@ -87,22 +87,22 @@ function Register () {
                 <span>{registerInput.error_list.password}</span>
                  
                 <button className='btn' type='submit'
-                >Register</button>
+                >Sign Up</button>
             </form>
             </section>
 
-             {/* 
+             
             <section className='login'>
             <p className='login'>
                 Already registered? <br />
                 <span className='line'>
-                   put router link here 
-                    <a href='#'>Sign In</a>
+                  
+                    <a href='login'>Sign In</a>
                 </span>
             </p>
            
             </section>
-             */}
+             
         </div>
     )
 }

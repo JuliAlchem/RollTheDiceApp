@@ -56,6 +56,15 @@ header .nav-btn {
     font-size: 1.8rem;
 }
 
+nav button {
+    margin: 0 2rem;
+    color: var(--textColor);
+    background-color: var(--mainColor);
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 1024px){
     header .nav-btn{
         visibility: visible;
@@ -91,4 +100,9 @@ header .nav-btn {
     nav a{
         font-size: 1.6rem;
     }
+
+    nav button {
+        font-size: 1.6rem;
+    }
+    
 }
