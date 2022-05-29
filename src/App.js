@@ -5,6 +5,8 @@ import Home from './Components/Home';
 import Register from './Components/Register';
 import Login from './Components/Login';
 import RollDice from './Components/RollDice';
+import Statistics from './Components/Statistics';
+
 
 import React from 'react';
 import {BrowserRouter as Router, Navigate, Route, Routes} from 'react-router-dom'; // for navigate
@@ -31,15 +33,17 @@ function App() {
         <main className='container-principle'> 
           <Routes>
             <Route path='/' element={<Home/>}></Route>
-            
+
+            <Route path='statistics' element={<Statistics/>}></Route>
+
             <Route path='register' element={localStorage.getItem('auth_token') ? <Navigate to='/' /> : <Register/> }></Route>
             <Route path='login' element={localStorage.getItem('auth_token') ? <Navigate to='/' /> : <Login/> }></Route>
-            
-            
-              
-           
-
+          
             <Route path='rolldice' element={<RollDice/>}></Route>
+
+           
+            <Route path='statistics' element={<Statistics/>}></Route>
+            
           </Routes>
         </main>
       </React.Fragment>

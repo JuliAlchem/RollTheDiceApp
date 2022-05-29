@@ -42,7 +42,7 @@ function Navbar(){
     {
         AuthButtons = (
             <React.Fragment> 
-            <a href='#'>Statistics</a>
+           
             <a href='rolldice'>Play</a>
             <button type='button' onClick={LogoutSubmit} className="logout">Logout</button>
             </React.Fragment> 
@@ -60,6 +60,7 @@ function Navbar(){
 
             <nav ref={navRef}>
                 <a href='/'>Home</a> 
+                <a href='statistics'>Statistics</a>
                   
                {AuthButtons}
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
